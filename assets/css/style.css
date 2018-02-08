@@ -1,0 +1,420 @@
+/*Style Sheet for Basic Portfolio pages*/
+
+/*This property is what you use to start building a responsive webpage */
+* {
+  box-sizing: border-box;
+}
+
+/*These properties define the entire page*/
+body {
+  background-image: url("./../images/fresh_snow.png");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+  border-color: #dddddd;
+  width: 100%;
+  }
+/*Main container inside the body */
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+}
+/*Extra container for full desktop viewing*/
+.content {
+  max-width: 960px;
+  }
+
+.row {
+  width: 1000px;
+  margin: 10px;
+}
+/* Creates 2 columns for content to fit into and be more responsive for mobile*/
+.column {
+  float:left;
+  width: 50%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+/*Creates a row for content to make resizing webpage easier*/
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*Contains properties for my Name*/
+header {
+    width: 100%;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;   
+  }
+
+/*This is the actual box my name is in*/
+h1 {
+    padding: 20px 0;
+    width: 240px;
+    margin-left: 20px;
+    font-size: 28px;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+/*Properties for other headers*/
+h2 {
+    padding: 8px;
+    font-size: 24px;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid #cccccc;
+  }
+
+p {
+    text-indent: 30px;
+    padding-top: 20px;
+  }
+
+#bio-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+
+/*You need this to make them line up horizontally*/
+
+.connect {
+  max-width: 270px;
+  width: 50%;
+  object-fit: cover;
+}
+.social {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+/*Pushes the nav bar in a little from the right*/
+nav {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/*Most properties for the nav bar*/
+nav a {
+    margin: 0;
+    text-decoration: none;
+    padding: 10px;
+    color: #777777;
+    background-color: #ffffff;
+    overflow: hidden;
+    float: right;
+    border: 0;
+    margin-top: 10px;
+  }
+  nav a:hover {
+    color: #4aaaa5;
+  }
+
+/*Place holder image properties for future projects*/
+.gallery {
+    
+    margin: 10px;
+    border: 1px solid #cccccc;
+    float: left;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+.project {
+  width: 240px;
+  height: 200px;
+ 
+}
+
+/*The text in those project images*/
+/*Description needs to be moved onto image and re-sized*/
+.desc {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  width: 100%;
+  color: #ffffff;
+  background: #4aaaa5;
+  z-index: -1;
+}
+
+/*Contact info form*/
+form {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  background-color:#ffffff;
+  resize: none;
+}
+
+/*Where the big message is in the form*/
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+/*Space for the user to write in*/
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+/*Submit buttom properties*/
+input[type=submit] {
+  width: 150px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #cccccc;
+  cursor: pointer;
+}
+
+#contact {
+  width: 100%;
+  overflow: auto;
+  clear: both;
+}
+/*Container for the social links*/
+aside {
+  
+  max-width: 270px;
+  max-height: 160px;
+  padding: 20px;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+input:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+footer {
+  display: block;
+  background: #666666;
+  color: #777777;
+  height: 50%;
+  line-height: 50px;
+  padding: 0px;
+  text-align: center;
+  border-top-style: solid;
+  border-top-color: #4aaaa5;
+  border-top-width: 8px;
+  font-size: 14px;
+}
+/* START MEDIA QUERIES   */
+/* START MEDIA QUERIES   */
+/* START MEDIA QUERIES   */
+
+
+/* START MEDIA QUERIES   */
+/* START MEDIA QUERIES   */
+
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  body {
+      background-color: plum;
+  }
+  h1 {
+    color: hotpink
+  }
+}
+
+@media screen and  (min-width: 641px) and (max-width: 768px) {
+  body {
+      background-color: blue;
+  }
+  h1 {
+    color: red
+  }
+}
+/*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;
+*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;
+*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;
+
+
+
+
+*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;
+
+
+
+*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;
+*askdfa;klsdnf;aklsdnf;aksdnfa;skdnfnasd;fknasdf;asd;fna;sdnkfa;*/
+@media screen and (min-width: 10px) and (max-width: 640px) {
+  body {
+      background-color: lightgreen;
+  }
+  main {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+  h1 {
+    color: yellow;
+    width: 100%;
+    margin: inherit;
+    font-size: 28px;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 0;
+    margin-left: 0px;
+  }
+  header {
+    max-width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background: #ffffff;
+    text-align: center; 
+    margin: 0px;
+  }
+  .row {
+    width: 100%;
+    margin: 10px;
+  }
+  .column {
+    width:100%;
+    max-width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    overflow: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    float: none;
+    border: 1px solid #cccccc;
+  }
+  .gallery {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0px;
+      margin-top: 0px;
+      border: none;
+      float: left;
+      opacity: 0.9;
+      margin-bottom: 20px;
+      color: #ffffff;
+  }
+  
+  #bio-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px;
+    float: left;
+    padding: 0px;
+    padding-top: 50px;
+    border: none;
+  }
+
+  ul {
+    margin-top: 20px; 
+    padding: 10px;
+  }
+
+/*You need this to make them line up horizontally*/
+
+.social {
+  width: 60px;
+  height: 60px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*Pushes the nav bar in a little from the right*/
+nav {
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    width: 100%;
+}
+
+/*Most properties for the nav bar*/
+nav a {
+    
+    margin: auto;
+    text-decoration: none;
+    padding: 0px;
+    color: #777777;
+    background-color: #ffffff;
+    overflow: hidden;
+    float: none;
+    border: 0;
+    margin-top: 0px;
+    display: inline-block;
+  }
+  nav a:hover {
+    color: #4aaaa5;
+  }
+  aside {
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 0px;
+    margin-right:0px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    text-align: left;
+  }
+  .social {
+    width: 60px;
+    height: 60px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  footer {
+    display: block;
+    background: #666666;
+    color: #777777;
+    height: 50%;
+    line-height: 50px;
+    padding: 0px;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 8px;
+    font-size: 14px;
+  }
+}
